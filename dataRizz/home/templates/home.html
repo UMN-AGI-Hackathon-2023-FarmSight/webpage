@@ -1,7 +1,11 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="home.css">
+
+    <!-- <link rel="stylesheet" href=home.css"> -->
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}"/>
     <script>
         function Q1() {
           alert("Q1");
@@ -39,9 +43,27 @@
 
 <title>Page Title</title>
 </head>
-<body>
+<body style="background-color:#FFFFF0">
 
-<h1>HEADER</h1>
+<h1 class="title">Reliably</h1>
+
+<div class="container">
+    <div class="left">
+      <div class="largecontent">
+        Analyze statistics for a particular product!
+        <br/>
+        <br/>
+      </div>
+      <div class="content">
+        Enter product name/code: <input type="text" name="product">
+        <button class="button">Submit</button>
+      </div>
+    </div>
+    <div class="right">
+      <div class="content">This is right div.</div>
+    </div>
+</div>
+
 <p>
     <button class="button" onclick="Q1()">Given a specific producer, what is the probability that they are going to deliver on their plan?</button>
     <br/>
@@ -63,6 +85,8 @@
     <br/>
     <button class="button" onclick="Q10()">Using these different probabilities, can we develop a planning factor, so that when planning, we can compensate in order to ensure that actuals align more closely with plans?</button>
     <br/>
+    <br/>
+
     
 </p>
 
