@@ -37,16 +37,18 @@ img {
 }
     
 .content {
-    width: 80%;
+    width: 90%;
     margin: 40px auto;
-    font-size: 35px;
+    font-size: 28px;
+    color: #800000;
 }
 
 .largecontent {
-    width: 80%;
+    width: 90%;
     margin: 40px auto;
     font-size: 40px;
     font-weight: bold;
+    color: #800000;
 }
     
 /* .title {
