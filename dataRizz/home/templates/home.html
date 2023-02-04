@@ -23,7 +23,7 @@
 </head>
 <body style="background-color:#FFFFF0">
 
-<h1 class="title">Reliably</h1>
+<h1 class="title">Farmsight</h1>
 
 <div class="container">
     <script>
@@ -34,6 +34,8 @@
             } else {
                 x.style.display = "none";
             }
+            // var y="yeet";
+            // DisplayHiddenData(y);
         }
     </script>
     <div class="left">
@@ -58,11 +60,25 @@
             <button class="button" onclick="Producer()">Submit</button>
         </div>
         <div class="hiddentext" id="producerhidden">
-            Producer: 
+            <!-- <script>
+                function DisplayHiddenData(prod) {
+                    document.write("Producer: " + prod);
+                }
+            </script> -->
+            Producer:
             <br/>
             Probability of delivery:
             <br/>
-            Probability of damage:
+            Probability of delivery on time:
+            <br/>
+            Land Owner: 
+            <br/>
+            Water Access: 
+            <br/>
+            Reliability Score:
+            <br/>
+            <br/>
+            See Below for Graphs:
         </div>
         <button class="button" onclick="ToggleHide('producerhidden')">Toggle Hide/Show</button>
     </div>
