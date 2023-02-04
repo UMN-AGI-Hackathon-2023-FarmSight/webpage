@@ -26,6 +26,16 @@
 <h1 class="title">Reliably</h1>
 
 <div class="container">
+    <script>
+        function ToggleHide(id) {
+            var x = document.getElementById(id);
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
     <div class="left">
       <div class="largecontent">
         Analyze statistics for a particular product!
@@ -47,6 +57,14 @@
             Enter producer name/code: <input type="text" id="producer" name="name">
             <button class="button" onclick="Producer()">Submit</button>
         </div>
+        <div class="hiddentext" id="producerhidden">
+            Producer: 
+            <br/>
+            Probability of delivery:
+            <br/>
+            Probability of damage:
+        </div>
+        <button class="button" onclick="ToggleHide('producerhidden')">Toggle Hide/Show</button>
     </div>
 </div>
 

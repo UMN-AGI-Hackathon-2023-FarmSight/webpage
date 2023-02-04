@@ -75,3 +75,8 @@ img {
     width: 50%;
     align-self: center;
 }
+
+.hiddentext {
+    /* visibility: hidden; */
+    display: none;
+}
