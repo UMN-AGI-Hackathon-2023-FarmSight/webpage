@@ -67,3 +67,11 @@ img {
         width: 50%;
     }
 }
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    align-self: center;
+}
