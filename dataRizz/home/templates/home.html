@@ -14,7 +14,9 @@
         }
         function Producer() {
             var producer = document.getElementById("producer").value;
+            // document.getElementById('producer').innerHTML = producer;
             alert(producer);
+            AddDataToDisplay(producer, "75%", "50%", "True", "False", "53");
         }
     </script>
 
@@ -36,6 +38,14 @@
             }
             // var y="yeet";
             // DisplayHiddenData(y);
+        }
+        function AddDataToDisplay(prod, prob1, prob2, land, water, score) {
+            document.getElementById('producer2').innerHTML = prod;
+            document.getElementById('prob1').innerHTML = prob1;
+            document.getElementById('prob2').innerHTML = prob2;
+            document.getElementById('land').innerHTML = land;
+            document.getElementById('water').innerHTML = water;
+            document.getElementById('score').innerHTML = score;
         }
     </script>
     <div class="left">
@@ -60,24 +70,20 @@
             <button class="button" onclick="Producer()">Submit</button>
         </div>
         <div class="hiddentext" id="producerhidden">
-            <!-- <script>
-                function DisplayHiddenData(prod) {
-                    document.write("Producer: " + prod);
-                }
-            </script> -->
-            Producer:
+            
+            Producer: <div id="producer2"></div>
             <br/>
-            Probability of delivery:
+            Probability of delivery: <div id="prob1"></div>
             <br/>
-            Probability of delivery on time:
+            Probability of delivery on time: <div id="prob2"></div>
             <br/>
-            Land Owner: 
+            Land Owner: <div id="land"></div>
             <br/>
-            Water Access: 
+            Water Access: <div id="water"></div>
             <br/>
-            Reliability Score:
+            Reliability Score: <div id="score"></div>
             <br/>
-            <br/>
+        
             See Below for Graphs:
         </div>
         <button class="button" onclick="ToggleHide('producerhidden')">Toggle Hide/Show</button>
