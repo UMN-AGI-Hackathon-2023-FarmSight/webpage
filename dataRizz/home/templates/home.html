@@ -66,8 +66,15 @@
             <br/>
         </div>
         <div class="content">
-            Enter producer name/code: <input type="text" id="producer" name="name">
-            <button class="button" onclick="Producer()">Submit</button>
+            {% block content%}
+            <form action="{% url 'home' %}" method="post">
+                {% csrf_token %}
+                Enter producer name/code: <input type="text" id="producer" name="name">
+                <button class="button" onclick="Producer()">Submit</button>
+
+            {% comment %} Enter producer name/code: <input type="text" id="producer" name="name"> {% endcomment %}
+            </form>
+            {% endblock %}
         </div>
         <div class="hiddentext" id="producerhidden">
             
