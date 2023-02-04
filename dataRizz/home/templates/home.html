@@ -7,36 +7,52 @@
     <!-- <link rel="stylesheet" href=home.css"> -->
     <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}"/>
     <script>
-        function Q1() {
-          alert("Q1");
+        // function Q1() {
+        //   alert("Q1");
+        // }
+        // function Q2() {
+        //   alert("Q2");
+        // }
+        // function Q3() {
+        //   alert("Q3");
+        // }
+        // function Q4() {
+        //   alert("Q4");
+        // }
+        // function Q5() {
+        //   alert("Q5");
+        // }
+        // function Q6() {
+        //   alert("Q6");
+        // }
+        // function Q7() {
+        //   alert("Q7");
+        // }
+        // function Q8() {
+        //   alert("Q8");
+        // }
+        // function Q9() {
+        //   alert("Q9");
+        // }
+        // function Q10() {
+        //   alert("Q10");
+        // }
+
+        function Product() {
+            var product = document.getElementById("product").value;
+            alert(product);
+            // DisplayPNGBelow();
         }
-        function Q2() {
-          alert("Q2");
+        function Producer() {
+            var producer = document.getElementById("producer").value;
+            alert(producer);
         }
-        function Q3() {
-          alert("Q3");
-        }
-        function Q4() {
-          alert("Q4");
-        }
-        function Q5() {
-          alert("Q5");
-        }
-        function Q6() {
-          alert("Q6");
-        }
-        function Q7() {
-          alert("Q7");
-        }
-        function Q8() {
-          alert("Q8");
-        }
-        function Q9() {
-          alert("Q9");
-        }
-        function Q10() {
-          alert("Q10");
-        }
+        // function DisplayPNGBelow() {
+        //     <div>
+        //         <img src="spiderman.png" alt="Spiderman"/>
+        //     </div>
+
+        // }
 
     </script>
 
@@ -56,7 +72,7 @@
       </div>
       <div class="content">
         Enter product name/code: <input type="text" id="product" name="name">
-        <button class="button">Submit</button>
+        <button class="button" onclick="Product()">Submit</button>
       </div>
     </div>
     <div class="right">
@@ -66,13 +82,13 @@
             <br/>
         </div>
         <div class="content">
-            Enter producer name/code: <input type="text" name="producer">
-            <button class="button">Submit</button>
+            Enter producer name/code: <input type="text" id="producer" name="name">
+            <button class="button" onclick="Producer()">Submit</button>
         </div>
     </div>
 </div>
 
-<p>
+<!-- <p>
     <button class="button" onclick="Q1()">Given a specific producer, what is the probability that they are going to deliver on their plan?</button>
     <br/>
     <button class="button" onclick="Q2()">Given a specific product, what is the probability that it will be delivered according to plan?</button>
@@ -96,7 +112,7 @@
     <br/>
 
     
-</p>
+</p> -->
 
 </body>
 </html>
