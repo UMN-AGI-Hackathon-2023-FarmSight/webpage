@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "68.46.8.34",
-    "farmsight.tech"
+    "farmsight.tech",
     "www.farmsight.tech",
     "*.farmsight.tech"
 ]
