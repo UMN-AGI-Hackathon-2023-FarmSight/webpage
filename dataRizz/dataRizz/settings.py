@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-u0zd7$js!6c(e)c8_1ulq+ow&3w_!&vo)(&w^*_oh=1_8s68nv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "68.46.8.34",
+    "farmsight.tech"
+
+]
 
 
 # Application definition
